@@ -1,0 +1,8 @@
+tomcat:
+  image: cloudesire/tomcat:8.0-jre8
+  restart: always
+  ports:
+    - "8088:80"
+  #hostname: docker-tomcat
+  volumes:
+    - /srv/docker-tomcat/webapps/:/opt/tomcat/webapps/
